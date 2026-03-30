@@ -3,8 +3,9 @@
 #include "struct.h"
 #include "funcs.h"
 
+
 int main(){
-  struct Club db;
+  struct DataBase DB;
   printf("\tChoose option\n1. Read File\n2. Show clubs\n3. Add club");
   printf("\t4. correct Club\n5. Write File");
 
