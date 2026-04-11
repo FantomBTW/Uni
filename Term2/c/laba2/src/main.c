@@ -8,10 +8,12 @@ int main(){
   struct Club *clubs = NULL;
   int clbCnt = 0;
 
-  printf("\tChoose option\n1. Read File\n2. Show clubs\n3. Add club");
-  printf("\t4. correct Club\n5. Write File");
-
   int choise = 0;
+  do {
+  printf("\n");
+  printf("\tChoose option\n1. Read File\n2. Show clubs\n3. Add club");
+  printf("\n4. correct Club\n5. Write File\n6. Exit program\n");
+
   scanf("%d", &choise);
   switch (choise) {
     case 1:
@@ -43,5 +45,6 @@ int main(){
       printf("WIP(or u enter wrong number)");
       break;
   }
+  } while (choise != 6);
   return 0;
 }
