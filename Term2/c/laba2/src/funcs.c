@@ -1,12 +1,13 @@
 #include "funcs.h"
+#include <stdio.h>
 
 void ReadFile(struct Club **arr, int *cnt){
 	char filename[128];
 	printf("Please, Enter the filename\n");
+	while (getchar() != '\n');
 	fgets(filename, 128, stdin);
-	filename[strlen(filename)-1] = '\0';
-  while (getchar() != '\n');
 
+	filename[strcspn(filename, "\n")] = '\0';
 	FILE *file = fopen(filename, "r");
 	if (file == NULL){
 		printf("file wasnt found");
@@ -23,11 +24,9 @@ void ReadFile(struct Club **arr, int *cnt){
 	struct Club *newArrClb = (struct Club*) malloc(newClbsCnt * sizeof(struct Club));
 
 	for (int i = 0; i < newClbsCnt; i++){
-		fscanf(file, "%[^;]%[^;];%d",
-			newArrClb[i].name,
-			newArrClb[i].country,
-			&newArrClb[i].victoryCnt
-		);
+		fscanf(file, "%[^;];", newArrClb[i].name);
+		fscanf(file, "%[^;];", newArrClb[i].country);
+		fscanf(file, "%d", &newArrClb[i].victoryCnt);
 
 		for (int q = 0; q < newArrClb[i].victoryCnt; q++){
 			fscanf(file, ";%d", &newArrClb[i].victoryYr[q]);
