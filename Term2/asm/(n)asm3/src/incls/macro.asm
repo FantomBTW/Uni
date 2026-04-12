@@ -1,4 +1,4 @@
-%macro print 2
+%macro prn 2
    mov  rax,  1   ;syscall 1 -- print
    mov  rdi,  1   ;std out device
    mov  rsi,  %1  ;text
@@ -6,7 +6,7 @@
    syscall
 %endmacro
 
-%macro scanf 1
+%macro input 1
    mov  rax,  0   ;syscall 0 -- input
    mov  rdi,  0   ;std in device
    mov  rsi,  %1  ;text
@@ -19,3 +19,7 @@
    mov  rdi,  0
    syscall
 %endmacro
+
+section .data
+   nl db 10
+   nllen equ $ - nl
