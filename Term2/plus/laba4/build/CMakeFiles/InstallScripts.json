@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/fantom/Uni/Term2/plus/laba4/build/cmake_install.cmake",
+		"/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-build/cmake_install.cmake",
+		"/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-build/raylib/cmake_install.cmake",
+		"/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-build/raylib/external/glfw/cmake_install.cmake",
+		"/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-build/raylib/external/glfw/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

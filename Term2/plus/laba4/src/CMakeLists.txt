@@ -1,13 +1,27 @@
 cmake_minimum_required(VERSION 3.11)
+include(FetchContent)
 
-project(dnd-simulation-test)
+project(dnd)
 
-add_executable(../bin/exe 
-        main.cpp
-        classes.cpp
-        funcs.cpp
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+FetchContent_Declare(
+   raylib
+   GIT_REPOSITORY https://github.com/raysan5/raylib.git
+   GIT_TAG 5.5
+)
+FetchContent_MakeAvailable(raylib)
+
+#add_executable(../bin/exe 
+#main.cpp
+#classes.cpp
+#funcs.cpp
+#)
+add_executable(
+   dnd
+   main.cpp
 )
 
-target_link_libraries(dnd-simulation-test PRIVATE raylib)
-target_include_directories(dnd-simulation-test PRIVATE ${PROJECT_SOURCE_DIR}/incls)
+target_link_libraries(dnd PRIVATE raylib)
+target_include_directories(dnd PRIVATE ${PROJECT_SOURCE_DIR}/incls)
 
