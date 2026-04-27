@@ -14,8 +14,8 @@ FetchContent_MakeAvailable(raylib)
 
 add_executable(dnd 
    main.cpp
-   incls/classes.cpp
-   incls/funcs.cpp
+   classes.cpp
+   funcs.cpp
 )
 
 target_link_libraries(dnd PRIVATE raylib)
