@@ -12,16 +12,11 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(raylib)
 
-#add_executable(../bin/exe 
-#main.cpp
-#classes.cpp
-#funcs.cpp
-#)
-add_executable(
-   dnd
+add_executable(dnd 
    main.cpp
+   incls/classes.cpp
+   incls/funcs.cpp
 )
 
 target_link_libraries(dnd PRIVATE raylib)
 target_include_directories(dnd PRIVATE ${PROJECT_SOURCE_DIR}/incls)
-

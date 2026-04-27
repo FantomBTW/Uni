@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/dnd.dir/link.d CMakeFiles/dnd.dir/main.cpp.o CMakeFiles/dnd.dir/incls/classes.cpp.o CMakeFiles/dnd.dir/incls/funcs.cpp.o -o dnd  _deps/raylib-build/raylib/libraylib.a -lm -lpthread /usr/lib/libOpenGL.so /usr/lib/libGLX.so /usr/lib/libGLU.so /usr/lib/librt.a -lm -ldl

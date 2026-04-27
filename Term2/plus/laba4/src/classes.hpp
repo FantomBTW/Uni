@@ -15,9 +15,9 @@ protected:
       target.getDmg(hitrate, dmg);
    }
 public:
-   unit(int HP, int Dice, int defend, Vector2 posVal){
+   unit(int HP, int dmg, int defend, Vector2 posVal){
       Hp = HP;
-      dmgDice = Dice;
+      dmgDice = dmg;
       def = defend;
       pos = posVal;
    };
@@ -45,9 +45,15 @@ public:
       pos.x += mv.x;
       pos.y += mv.y;
    }
+
+   Vector2 getpos(){
+      return pos;
+   }
 };
 
+/*
 class cleric : public unit{
 public:
-   
+
 };
+*/
