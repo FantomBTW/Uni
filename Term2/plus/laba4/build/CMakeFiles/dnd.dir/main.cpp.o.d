@@ -145,5 +145,6 @@ CMakeFiles/dnd.dir/main.cpp.o: \
  /usr/include/c++/14.2/bits/stl_bvector.h \
  /usr/include/c++/14.2/bits/vector.tcc \
  /home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-src/src/raylib.h \
+ /home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-src/src/rlgl.h \
  /home/fantom/Uni/Term2/plus/laba4/src/funcs.hpp \
  /home/fantom/Uni/Term2/plus/laba4/src/classes.hpp

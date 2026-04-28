@@ -7,15 +7,15 @@
 },
 {
   "directory": "/home/fantom/Uni/Term2/plus/laba4/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/fantom/Uni/Term2/plus/laba4/src/incls -I/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-src/src -I/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-src/src/external/glfw/include  -o CMakeFiles/dnd.dir/incls/classes.cpp.o -c /home/fantom/Uni/Term2/plus/laba4/src/incls/classes.cpp",
-  "file": "/home/fantom/Uni/Term2/plus/laba4/src/incls/classes.cpp",
-  "output": "CMakeFiles/dnd.dir/incls/classes.cpp.o"
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/fantom/Uni/Term2/plus/laba4/src/incls -I/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-src/src -I/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-src/src/external/glfw/include  -o CMakeFiles/dnd.dir/classes.cpp.o -c /home/fantom/Uni/Term2/plus/laba4/src/classes.cpp",
+  "file": "/home/fantom/Uni/Term2/plus/laba4/src/classes.cpp",
+  "output": "CMakeFiles/dnd.dir/classes.cpp.o"
 },
 {
   "directory": "/home/fantom/Uni/Term2/plus/laba4/build",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/fantom/Uni/Term2/plus/laba4/src/incls -I/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-src/src -I/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-src/src/external/glfw/include  -o CMakeFiles/dnd.dir/incls/funcs.cpp.o -c /home/fantom/Uni/Term2/plus/laba4/src/incls/funcs.cpp",
-  "file": "/home/fantom/Uni/Term2/plus/laba4/src/incls/funcs.cpp",
-  "output": "CMakeFiles/dnd.dir/incls/funcs.cpp.o"
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/fantom/Uni/Term2/plus/laba4/src/incls -I/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-src/src -I/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-src/src/external/glfw/include  -o CMakeFiles/dnd.dir/funcs.cpp.o -c /home/fantom/Uni/Term2/plus/laba4/src/funcs.cpp",
+  "file": "/home/fantom/Uni/Term2/plus/laba4/src/funcs.cpp",
+  "output": "CMakeFiles/dnd.dir/funcs.cpp.o"
 },
 {
   "directory": "/home/fantom/Uni/Term2/plus/laba4/build/_deps/raylib-build/raylib",

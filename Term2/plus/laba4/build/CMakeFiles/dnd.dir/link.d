@@ -3,8 +3,8 @@ dnd: \
   /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o \
   /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o \
   CMakeFiles/dnd.dir/main.cpp.o \
-  CMakeFiles/dnd.dir/incls/classes.cpp.o \
-  CMakeFiles/dnd.dir/incls/funcs.cpp.o \
+  CMakeFiles/dnd.dir/classes.cpp.o \
+  CMakeFiles/dnd.dir/funcs.cpp.o \
   _deps/raylib-build/raylib/libraylib.a \
   /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/libpthread.a \
   /usr/lib/libOpenGL.so \
@@ -57,9 +57,9 @@ dnd: \
 
 CMakeFiles/dnd.dir/main.cpp.o:
 
-CMakeFiles/dnd.dir/incls/classes.cpp.o:
+CMakeFiles/dnd.dir/classes.cpp.o:
 
-CMakeFiles/dnd.dir/incls/funcs.cpp.o:
+CMakeFiles/dnd.dir/funcs.cpp.o:
 
 _deps/raylib-build/raylib/libraylib.a:
 

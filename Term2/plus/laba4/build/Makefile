@@ -246,53 +246,53 @@ update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
-incls/classes.o: incls/classes.cpp.o
-.PHONY : incls/classes.o
+classes.o: classes.cpp.o
+.PHONY : classes.o
 
 # target to build an object file
-incls/classes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/classes.cpp.o
-.PHONY : incls/classes.cpp.o
+classes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/classes.cpp.o
+.PHONY : classes.cpp.o
 
-incls/classes.i: incls/classes.cpp.i
-.PHONY : incls/classes.i
+classes.i: classes.cpp.i
+.PHONY : classes.i
 
 # target to preprocess a source file
-incls/classes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/classes.cpp.i
-.PHONY : incls/classes.cpp.i
+classes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/classes.cpp.i
+.PHONY : classes.cpp.i
 
-incls/classes.s: incls/classes.cpp.s
-.PHONY : incls/classes.s
+classes.s: classes.cpp.s
+.PHONY : classes.s
 
 # target to generate assembly for a file
-incls/classes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/classes.cpp.s
-.PHONY : incls/classes.cpp.s
+classes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/classes.cpp.s
+.PHONY : classes.cpp.s
 
-incls/funcs.o: incls/funcs.cpp.o
-.PHONY : incls/funcs.o
+funcs.o: funcs.cpp.o
+.PHONY : funcs.o
 
 # target to build an object file
-incls/funcs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/funcs.cpp.o
-.PHONY : incls/funcs.cpp.o
+funcs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/funcs.cpp.o
+.PHONY : funcs.cpp.o
 
-incls/funcs.i: incls/funcs.cpp.i
-.PHONY : incls/funcs.i
+funcs.i: funcs.cpp.i
+.PHONY : funcs.i
 
 # target to preprocess a source file
-incls/funcs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/funcs.cpp.i
-.PHONY : incls/funcs.cpp.i
+funcs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/funcs.cpp.i
+.PHONY : funcs.cpp.i
 
-incls/funcs.s: incls/funcs.cpp.s
-.PHONY : incls/funcs.s
+funcs.s: funcs.cpp.s
+.PHONY : funcs.s
 
 # target to generate assembly for a file
-incls/funcs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/funcs.cpp.s
-.PHONY : incls/funcs.cpp.s
+funcs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/funcs.cpp.s
+.PHONY : funcs.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -337,12 +337,12 @@ help:
 	@echo "... dnd"
 	@echo "... glfw"
 	@echo "... raylib"
-	@echo "... incls/classes.o"
-	@echo "... incls/classes.i"
-	@echo "... incls/classes.s"
-	@echo "... incls/funcs.o"
-	@echo "... incls/funcs.i"
-	@echo "... incls/funcs.s"
+	@echo "... classes.o"
+	@echo "... classes.i"
+	@echo "... classes.s"
+	@echo "... funcs.o"
+	@echo "... funcs.i"
+	@echo "... funcs.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

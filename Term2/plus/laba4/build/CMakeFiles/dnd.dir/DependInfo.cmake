@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/fantom/Uni/Term2/plus/laba4/src/incls/classes.cpp" "CMakeFiles/dnd.dir/incls/classes.cpp.o" "gcc" "CMakeFiles/dnd.dir/incls/classes.cpp.o.d"
-  "/home/fantom/Uni/Term2/plus/laba4/src/incls/funcs.cpp" "CMakeFiles/dnd.dir/incls/funcs.cpp.o" "gcc" "CMakeFiles/dnd.dir/incls/funcs.cpp.o.d"
+  "/home/fantom/Uni/Term2/plus/laba4/src/classes.cpp" "CMakeFiles/dnd.dir/classes.cpp.o" "gcc" "CMakeFiles/dnd.dir/classes.cpp.o.d"
+  "/home/fantom/Uni/Term2/plus/laba4/src/funcs.cpp" "CMakeFiles/dnd.dir/funcs.cpp.o" "gcc" "CMakeFiles/dnd.dir/funcs.cpp.o.d"
   "/home/fantom/Uni/Term2/plus/laba4/src/main.cpp" "CMakeFiles/dnd.dir/main.cpp.o" "gcc" "CMakeFiles/dnd.dir/main.cpp.o.d"
   "" "dnd" "gcc" "CMakeFiles/dnd.dir/link.d"
   )

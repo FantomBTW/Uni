@@ -1,16 +1,10 @@
 #include <iostream>
 #include <vector>
 #include "raylib.h"
+#include "rlgl.h"
 #include "funcs.hpp"
 #include "classes.hpp"
-
-struct settings{
-   int width = 800;
-   int height = 600;
-   Color clrmonsters = RED;
-   Color clrheroes = BLUE;
-   float dotSize = 15.0;
-};
+#include "settings.hpp"
 
 int main() {
    settings par;
@@ -21,12 +15,20 @@ int main() {
    std::vector<unit> heros;
    std::vector<unit> monsters;
 
-   monsters.push_back(unit(10, 6, 12, {0, 0}));
-   heros.push_back(unit(15, 8, 17, {10, 10}));
+   monsters.push_back(unit(10, 6, 12, {20, 20}));
+   heros.push_back(unit(15, 8, 17, {100, 100}));
    
    while (!WindowShouldClose()) {
       BeginDrawing();
       ClearBackground(RAYWHITE);
+
+      rlPushMatrix();
+         rlTranslatef(2.5f, -25, 0);
+         rlRotatef(90, 1, 0, 0);
+         DrawGrid(100, 5*N);
+      rlPopMatrix();
+
+
          for (int i = 0; i <= heros.size(); i++){
             DrawCircle(
                   heros[i].getpos().x,

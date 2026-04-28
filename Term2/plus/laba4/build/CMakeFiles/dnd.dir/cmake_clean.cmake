@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dnd.dir/link.d"
-  "CMakeFiles/dnd.dir/incls/classes.cpp.o"
-  "CMakeFiles/dnd.dir/incls/classes.cpp.o.d"
-  "CMakeFiles/dnd.dir/incls/funcs.cpp.o"
-  "CMakeFiles/dnd.dir/incls/funcs.cpp.o.d"
+  "CMakeFiles/dnd.dir/classes.cpp.o"
+  "CMakeFiles/dnd.dir/classes.cpp.o.d"
+  "CMakeFiles/dnd.dir/funcs.cpp.o"
+  "CMakeFiles/dnd.dir/funcs.cpp.o.d"
   "CMakeFiles/dnd.dir/main.cpp.o"
   "CMakeFiles/dnd.dir/main.cpp.o.d"
   "dnd"
