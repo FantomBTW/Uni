@@ -40,7 +40,6 @@ int main() {
     printf("Max: %d | Min: %d\n", rec_max(arr, n, is_even), rec_min(arr, n, is_even));
     printf("Sum: %d | Prod: %d\n", rec_sum(arr, n, is_even), rec_prod(arr, n, is_even));
 
-    // проверка для положительных чисел
     printf("\npositive numbers\n");
     printf("Max: %d | Sum: %d\n", rec_max(arr, n, is_pos), rec_sum(arr, n, is_pos));
 
