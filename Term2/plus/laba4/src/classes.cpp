@@ -38,6 +38,8 @@ public:
          } else {
             Hp -= dmg;
          };
+      } else if (dmg < 0/*heal is -dmg*/){
+         Hp -= dmg;
       }
    }
 
@@ -51,9 +53,27 @@ public:
    }
 };
 
-/*
 class cleric : public unit{
-public:
+protected:
+   int mainStat = 2; // wisdon of cleric
 
+   void heal(
+         int healrate,
+         int flatheal/*+ ваш модификатор базовой характеристики. */,
+         unit& target
+         )
+   {
+      int healVal = rand()%healrate + 1;
+      healVal = healVal * -1;/*heal is -dmg*/
+      target.getDmg(0, healVal); // ckep hitrate check when (dmg <= 0)
+   }
+
+public:
+   void Healing_word(unit& target){
+      heal(4, mainStat, target);
+   }
+
+   void cure_wounds(unit& target){
+      heal(8, mainStat, target);
+   }
 };
-*/

@@ -1,7 +1,6 @@
 #pragma once
 
 #include <raylib.h>
-#include <cstdlib>
 
 class unit{
 protected:
@@ -11,51 +10,25 @@ protected:
    int def;
    Vector2 pos;
 
-   void attack(unit& target){
-      int hitrate = rand()%20 + 1;
-      int dmg = rand()%dmgDice + 1;
-      target.getDmg(hitrate, dmg);
-   }
+   void attack(unit& target);
 public:
-   unit(int HP, int dmg, int defend, Vector2 posVal){
-      Hp = HP;
-      dmgDice = dmg;
-      def = defend;
-      pos = posVal;
-   };
+   unit(int HP, int dmg, int defend, Vector2 posVal);;
 
-   unit(const unit& newcl){
-      Hp = newcl.Hp;
-      dmgDice = newcl.dmgDice;
-      def = newcl.def;
-   };
+   unit(const unit& newcl);
 
    ~unit(){};
 
-   void getDmg(int hit, int dmg){
-      if (hit >= def){
-         if (dmg > Hp) {
-            isAlive = 0;
-            Hp = 0;
-         } else {
-            Hp -= dmg;
-         };
-      }
-   }
+   void getDmg(int hit, int dmg);
 
-   void move(Vector2 mv){
-      pos.x += mv.x;
-      pos.y += mv.y;
-   }
+   void move(Vector2 mv);
 
-   Vector2 getpos(){
-      return pos;
-   }
+   Vector2 getpos();
 };
 
-/*
 class cleric : public unit{
+private:
+   void heal(unit& target);
 public:
-
+   void Healing_word();
+   void cure_wounds(unit& target);
 };
-*/
