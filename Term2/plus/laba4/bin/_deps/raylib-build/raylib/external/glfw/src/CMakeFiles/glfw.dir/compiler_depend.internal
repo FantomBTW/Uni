@@ -173,11 +173,11 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/egl_context.c
@@ -352,9 +352,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/glx_context.c
@@ -529,9 +529,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/init.c
@@ -706,9 +706,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/input.c
@@ -893,10 +893,10 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/float.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/linux_joystick.c
@@ -958,6 +958,7 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c
  /usr/include/asm/types.h
  /usr/include/bits/atomic_wide_counter.h
  /usr/include/bits/byteswap.h
+ /usr/include/bits/cloexec.h
  /usr/include/bits/confname.h
  /usr/include/bits/cpu-set.h
  /usr/include/bits/dirent.h
@@ -1089,9 +1090,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/monitor.c
@@ -1279,12 +1280,12 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/float.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/null_init.c
@@ -1458,9 +1459,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/null_joystick.c
@@ -1627,9 +1628,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/null_monitor.c
@@ -1812,9 +1813,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/null_window.c
@@ -1986,9 +1987,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/osmesa_context.c
@@ -2163,9 +2164,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/platform.c
@@ -2339,9 +2340,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/posix_module.c
@@ -2510,9 +2511,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/posix_poll.c
@@ -2689,9 +2690,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/posix_thread.c
@@ -2861,9 +2862,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/posix_time.c
@@ -3030,9 +3031,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/vulkan.c
@@ -3207,9 +3208,9 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/window.c
@@ -3384,10 +3385,10 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/float.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/x11_init.c
@@ -3450,6 +3451,7 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o
  /usr/include/assert.h
  /usr/include/bits/atomic_wide_counter.h
  /usr/include/bits/byteswap.h
+ /usr/include/bits/cloexec.h
  /usr/include/bits/confname.h
  /usr/include/bits/cpu-set.h
  /usr/include/bits/endian.h
@@ -3579,11 +3581,11 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/x11_monitor.c
@@ -3770,11 +3772,11 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/x11_window.c
@@ -3961,11 +3963,11 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h
 
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o
  /home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/src/xkb_unicode.c
@@ -4132,7 +4134,7 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o
  /usr/include/sys/ucontext.h
  /usr/include/time.h
  /usr/include/unistd.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h
 

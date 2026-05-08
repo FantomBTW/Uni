@@ -86,46 +86,30 @@ CMakeFiles/dnd.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dnd.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Aoi/git/Uni/Term2/plus/laba4/src/main.cpp -o CMakeFiles/dnd.dir/main.cpp.s
 
-CMakeFiles/dnd.dir/incls/classes.cpp.o: CMakeFiles/dnd.dir/flags.make
-CMakeFiles/dnd.dir/incls/classes.cpp.o: /home/Aoi/git/Uni/Term2/plus/laba4/src/incls/classes.cpp
-CMakeFiles/dnd.dir/incls/classes.cpp.o: CMakeFiles/dnd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Aoi/git/Uni/Term2/plus/laba4/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dnd.dir/incls/classes.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dnd.dir/incls/classes.cpp.o -MF CMakeFiles/dnd.dir/incls/classes.cpp.o.d -o CMakeFiles/dnd.dir/incls/classes.cpp.o -c /home/Aoi/git/Uni/Term2/plus/laba4/src/incls/classes.cpp
+CMakeFiles/dnd.dir/cls/classes.cpp.o: CMakeFiles/dnd.dir/flags.make
+CMakeFiles/dnd.dir/cls/classes.cpp.o: /home/Aoi/git/Uni/Term2/plus/laba4/src/cls/classes.cpp
+CMakeFiles/dnd.dir/cls/classes.cpp.o: CMakeFiles/dnd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Aoi/git/Uni/Term2/plus/laba4/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dnd.dir/cls/classes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dnd.dir/cls/classes.cpp.o -MF CMakeFiles/dnd.dir/cls/classes.cpp.o.d -o CMakeFiles/dnd.dir/cls/classes.cpp.o -c /home/Aoi/git/Uni/Term2/plus/laba4/src/cls/classes.cpp
 
-CMakeFiles/dnd.dir/incls/classes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dnd.dir/incls/classes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Aoi/git/Uni/Term2/plus/laba4/src/incls/classes.cpp > CMakeFiles/dnd.dir/incls/classes.cpp.i
+CMakeFiles/dnd.dir/cls/classes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dnd.dir/cls/classes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Aoi/git/Uni/Term2/plus/laba4/src/cls/classes.cpp > CMakeFiles/dnd.dir/cls/classes.cpp.i
 
-CMakeFiles/dnd.dir/incls/classes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dnd.dir/incls/classes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Aoi/git/Uni/Term2/plus/laba4/src/incls/classes.cpp -o CMakeFiles/dnd.dir/incls/classes.cpp.s
-
-CMakeFiles/dnd.dir/incls/funcs.cpp.o: CMakeFiles/dnd.dir/flags.make
-CMakeFiles/dnd.dir/incls/funcs.cpp.o: /home/Aoi/git/Uni/Term2/plus/laba4/src/incls/funcs.cpp
-CMakeFiles/dnd.dir/incls/funcs.cpp.o: CMakeFiles/dnd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Aoi/git/Uni/Term2/plus/laba4/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dnd.dir/incls/funcs.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dnd.dir/incls/funcs.cpp.o -MF CMakeFiles/dnd.dir/incls/funcs.cpp.o.d -o CMakeFiles/dnd.dir/incls/funcs.cpp.o -c /home/Aoi/git/Uni/Term2/plus/laba4/src/incls/funcs.cpp
-
-CMakeFiles/dnd.dir/incls/funcs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dnd.dir/incls/funcs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Aoi/git/Uni/Term2/plus/laba4/src/incls/funcs.cpp > CMakeFiles/dnd.dir/incls/funcs.cpp.i
-
-CMakeFiles/dnd.dir/incls/funcs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dnd.dir/incls/funcs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Aoi/git/Uni/Term2/plus/laba4/src/incls/funcs.cpp -o CMakeFiles/dnd.dir/incls/funcs.cpp.s
+CMakeFiles/dnd.dir/cls/classes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dnd.dir/cls/classes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Aoi/git/Uni/Term2/plus/laba4/src/cls/classes.cpp -o CMakeFiles/dnd.dir/cls/classes.cpp.s
 
 # Object files for target dnd
 dnd_OBJECTS = \
 "CMakeFiles/dnd.dir/main.cpp.o" \
-"CMakeFiles/dnd.dir/incls/classes.cpp.o" \
-"CMakeFiles/dnd.dir/incls/funcs.cpp.o"
+"CMakeFiles/dnd.dir/cls/classes.cpp.o"
 
 # External object files for target dnd
 dnd_EXTERNAL_OBJECTS =
 
 dnd: CMakeFiles/dnd.dir/main.cpp.o
-dnd: CMakeFiles/dnd.dir/incls/classes.cpp.o
-dnd: CMakeFiles/dnd.dir/incls/funcs.cpp.o
+dnd: CMakeFiles/dnd.dir/cls/classes.cpp.o
 dnd: CMakeFiles/dnd.dir/build.make
 dnd: CMakeFiles/dnd.dir/compiler_depend.ts
 dnd: _deps/raylib-build/raylib/libraylib.a
@@ -135,7 +119,7 @@ dnd: /usr/lib/libGLU.so
 dnd: /usr/lib/librt.a
 dnd: /usr/lib/libm.so
 dnd: CMakeFiles/dnd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Aoi/git/Uni/Term2/plus/laba4/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable dnd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Aoi/git/Uni/Term2/plus/laba4/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable dnd"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dnd.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

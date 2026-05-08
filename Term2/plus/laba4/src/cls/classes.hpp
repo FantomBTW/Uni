@@ -16,7 +16,7 @@ public:
 
    unit(const unit& newcl);
 
-   ~unit(){};
+   ~unit();
 
    void getDmg(int hit, int dmg);
 
@@ -27,8 +27,9 @@ public:
 
 class cleric : public unit{
 private:
-   void heal(unit& target);
+   int mainStat = 2;
+   void heal(int healrate, int flatheal, unit& target);
 public:
-   void Healing_word();
+   void Healing_word(unit& target);
    void cure_wounds(unit& target);
 };

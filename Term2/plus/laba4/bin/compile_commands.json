@@ -7,15 +7,9 @@
 },
 {
   "directory": "/home/Aoi/git/Uni/Term2/plus/laba4/bin",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/Aoi/git/Uni/Term2/plus/laba4/src/incls -I/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src -I/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/include  -o CMakeFiles/dnd.dir/incls/classes.cpp.o -c /home/Aoi/git/Uni/Term2/plus/laba4/src/incls/classes.cpp",
-  "file": "/home/Aoi/git/Uni/Term2/plus/laba4/src/incls/classes.cpp",
-  "output": "CMakeFiles/dnd.dir/incls/classes.cpp.o"
-},
-{
-  "directory": "/home/Aoi/git/Uni/Term2/plus/laba4/bin",
-  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/Aoi/git/Uni/Term2/plus/laba4/src/incls -I/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src -I/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/include  -o CMakeFiles/dnd.dir/incls/funcs.cpp.o -c /home/Aoi/git/Uni/Term2/plus/laba4/src/incls/funcs.cpp",
-  "file": "/home/Aoi/git/Uni/Term2/plus/laba4/src/incls/funcs.cpp",
-  "output": "CMakeFiles/dnd.dir/incls/funcs.cpp.o"
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/Aoi/git/Uni/Term2/plus/laba4/src/incls -I/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src -I/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-src/src/external/glfw/include  -o CMakeFiles/dnd.dir/cls/classes.cpp.o -c /home/Aoi/git/Uni/Term2/plus/laba4/src/cls/classes.cpp",
+  "file": "/home/Aoi/git/Uni/Term2/plus/laba4/src/cls/classes.cpp",
+  "output": "CMakeFiles/dnd.dir/cls/classes.cpp.o"
 },
 {
   "directory": "/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-build/raylib",

@@ -128,16 +128,16 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o: _deps/raylib-src/src
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xmmintrin.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdbool.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/xmmintrin.h
 
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o: _deps/raylib-src/src/rcore.c \
   _deps/raylib-src/src/config.h \
@@ -244,16 +244,16 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o: _deps/raylib-src/src/
   /usr/include/sys/types.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xmmintrin.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdbool.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/xmmintrin.h
 
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o: _deps/raylib-src/src/rmodels.c \
   _deps/raylib-src/src/config.h \
@@ -356,13 +356,13 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o: _deps/raylib-src/sr
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
   /usr/include/unistd.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/float.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdbool.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h
 
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o: _deps/raylib-src/src/rshapes.c \
   _deps/raylib-src/src/config.h \
@@ -420,10 +420,10 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o: _deps/raylib-src/sr
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/float.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdbool.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
 
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o: _deps/raylib-src/src/rtext.c \
   _deps/raylib-src/src/config.h \
@@ -499,9 +499,9 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o: _deps/raylib-src/src/
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdbool.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
 
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o: _deps/raylib-src/src/rtextures.c \
   _deps/raylib-src/src/config.h \
@@ -591,16 +591,16 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o: _deps/raylib-src/
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xmmintrin.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdbool.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/xmmintrin.h
 
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o: _deps/raylib-src/src/utils.c \
   _deps/raylib-src/src/config.h \
@@ -662,26 +662,26 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o: _deps/raylib-src/src/
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdbool.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h
 
 
 _deps/raylib-src/src/external/stb_perlin.h:
 
+_deps/raylib-src/src/external/stb_image_write.h:
+
 _deps/raylib-src/src/external/rl_gputex.h:
+
+_deps/raylib-src/src/external/stb_rect_pack.h:
 
 _deps/raylib-src/src/rshapes.c:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/float.h:
 
 _deps/raylib-src/src/external/qoi.h:
 
 _deps/raylib-src/src/external/tinyobj_loader_c.h:
-
-_deps/raylib-src/src/rmodels.c:
-
-/usr/include/dirent.h:
 
 /usr/include/bits/xopen_lim.h:
 
@@ -711,27 +711,31 @@ _deps/raylib-src/src/external/glfw/include/GLFW/glfw3.h:
 
 _deps/raylib-src/src/rcore.c:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xmmintrin.h:
+_deps/raylib-src/src/rmodels.c:
 
-_deps/raylib-src/src/external/stb_image_write.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/xmmintrin.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stddef.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdbool.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h:
+/usr/include/dirent.h:
 
-_deps/raylib-src/src/external/stb_rect_pack.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/mm_malloc.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/emmintrin.h:
 
 _deps/raylib-src/src/external/stb_image_resize2.h:
 
 /usr/include/bits/types/__FILE.h:
 
 _deps/raylib-src/src/raudio.c:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
 
 /usr/include/bits/types/struct_timeval.h:
 
@@ -753,8 +757,6 @@ _deps/raylib-src/src/raudio.c:
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h:
-
 /usr/include/bits/pthread_stack_min.h:
 
 /usr/include/sys/time.h:
@@ -774,8 +776,6 @@ _deps/raylib-src/src/external/stb_vorbis.c:
 /usr/include/bits/poll.h:
 
 /usr/include/bits/libc-header-start.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
 
 /usr/include/bits/getopt_posix.h:
 
@@ -851,6 +851,8 @@ _deps/raylib-src/src/config.h:
 
 _deps/raylib-src/src/external/par_shapes.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h:
+
 /usr/include/bits/confname.h:
 
 /usr/include/bits/dlfcn.h:
@@ -892,8 +894,6 @@ _deps/raylib-src/src/rtextures.c:
 /usr/include/bits/floatn.h:
 
 /usr/include/bits/struct_mutex.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h:
 
 /usr/include/bits/types/time_t.h:
 
@@ -979,8 +979,6 @@ _deps/raylib-src/src/external/stb_truetype.h:
 
 /usr/include/dlfcn.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h:
-
 /usr/include/bits/unistd_ext.h:
 
 /usr/include/bits/wordsize.h:
@@ -1014,5 +1012,7 @@ _deps/raylib-src/src/rtext.c:
 /usr/include/time.h:
 
 /usr/include/unistd.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdint.h:
 
 /usr/include/wchar.h:

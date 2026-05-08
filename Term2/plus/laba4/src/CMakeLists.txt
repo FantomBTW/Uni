@@ -14,8 +14,8 @@ FetchContent_MakeAvailable(raylib)
 
 add_executable(dnd 
    main.cpp
-   classes.cpp
-   funcs.cpp
+   cls/classes.cpp
+   #fn/funcs.cpp # здесь должны были быть фишки типо ИИ монстров, логика движения и куча...
 )
 
 target_link_libraries(dnd PRIVATE raylib)

@@ -246,53 +246,29 @@ update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
-incls/classes.o: incls/classes.cpp.o
-.PHONY : incls/classes.o
+cls/classes.o: cls/classes.cpp.o
+.PHONY : cls/classes.o
 
 # target to build an object file
-incls/classes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/classes.cpp.o
-.PHONY : incls/classes.cpp.o
+cls/classes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/cls/classes.cpp.o
+.PHONY : cls/classes.cpp.o
 
-incls/classes.i: incls/classes.cpp.i
-.PHONY : incls/classes.i
-
-# target to preprocess a source file
-incls/classes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/classes.cpp.i
-.PHONY : incls/classes.cpp.i
-
-incls/classes.s: incls/classes.cpp.s
-.PHONY : incls/classes.s
-
-# target to generate assembly for a file
-incls/classes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/classes.cpp.s
-.PHONY : incls/classes.cpp.s
-
-incls/funcs.o: incls/funcs.cpp.o
-.PHONY : incls/funcs.o
-
-# target to build an object file
-incls/funcs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/funcs.cpp.o
-.PHONY : incls/funcs.cpp.o
-
-incls/funcs.i: incls/funcs.cpp.i
-.PHONY : incls/funcs.i
+cls/classes.i: cls/classes.cpp.i
+.PHONY : cls/classes.i
 
 # target to preprocess a source file
-incls/funcs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/funcs.cpp.i
-.PHONY : incls/funcs.cpp.i
+cls/classes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/cls/classes.cpp.i
+.PHONY : cls/classes.cpp.i
 
-incls/funcs.s: incls/funcs.cpp.s
-.PHONY : incls/funcs.s
+cls/classes.s: cls/classes.cpp.s
+.PHONY : cls/classes.s
 
 # target to generate assembly for a file
-incls/funcs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/incls/funcs.cpp.s
-.PHONY : incls/funcs.cpp.s
+cls/classes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dnd.dir/build.make CMakeFiles/dnd.dir/cls/classes.cpp.s
+.PHONY : cls/classes.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -337,12 +313,9 @@ help:
 	@echo "... dnd"
 	@echo "... glfw"
 	@echo "... raylib"
-	@echo "... incls/classes.o"
-	@echo "... incls/classes.i"
-	@echo "... incls/classes.s"
-	@echo "... incls/funcs.o"
-	@echo "... incls/funcs.i"
-	@echo "... incls/funcs.s"
+	@echo "... cls/classes.o"
+	@echo "... cls/classes.i"
+	@echo "... cls/classes.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
