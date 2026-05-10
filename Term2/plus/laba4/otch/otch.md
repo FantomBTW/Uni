@@ -267,5 +267,78 @@ target_link_libraries(dnd PRIVATE raylib)
 target_include_directories(dnd PRIVATE ${PROJECT_SOURCE_DIR}/incls)
 ```
 
-В дальнейшем будут приведены небольшие файлы показывающие, моё понимание остальных вопросов, не затронутых в "набросках" этой симуляции
+В дальнейшем будут приведены небольшие файлы по остальным вопросам, не затронутым в "набросках" симуляции.
 
+how override works
+```cpp
+#include <iostream>
+#include <ostream>
+
+class cls {
+public:
+   virtual void prntip(){
+      std::cout << "idk, what is that" << std::endl;
+   }
+};
+
+class newcls : public cls {
+public:
+   void prntip() override{
+      std::cout << "new gen idk" << std::endl;
+   }
+};
+
+int main(){
+   std::cout << "cls" << std::endl;
+   cls myCls;
+   myCls.prntip();
+
+   std::cout << "newcls" << std::endl;
+   newcls mynewCls;
+   mynewCls.prntip();
+}
+```
+
+virtual + override (Inheritance, clear class)
+```cpp
+#include <iostream>
+#include <ostream>
+#include <vector>
+
+class race {
+public:
+   virtual void replic() = 0;
+   virtual ~race() = default;
+};
+
+class human : public race{
+public:
+   void replic(){
+      std::cout << "glory for the mankind" << std::endl;
+   }
+};
+
+class elf : public race{
+public:
+   void replic(){
+      std::cout << "im Friren" << std::endl;
+   }
+};
+
+int main(){
+   std::vector<race*> team;
+
+   team.push_back(new human());
+   team.push_back(new elf());
+
+   for ( auto smne : team ){
+      smne->replic();
+   }
+
+   for ( auto smne : team ){
+      delete smne;
+   }
+   
+   team.clear();
+}
+```
