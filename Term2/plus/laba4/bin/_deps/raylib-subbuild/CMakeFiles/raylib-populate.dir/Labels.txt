@@ -1,0 +1,14 @@
+# Target labels
+ raylib-populate
+# Source files and their labels
+/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-subbuild/CMakeFiles/raylib-populate
+/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-subbuild/CMakeFiles/raylib-populate.rule
+/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete.rule
+/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build.rule
+/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure.rule
+/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download.rule
+/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install.rule
+/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir.rule
+/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch.rule
+/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test.rule
+/home/Aoi/git/Uni/Term2/plus/laba4/bin/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update.rule
