@@ -11,7 +11,7 @@ public:
 class newcls : public cls {
 public:
    void prntip() override{
-      std::cout << "new gen class" << std::endl;
+      std::cout << "new gen idk" << std::endl;
    }
 };
 
