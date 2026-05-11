@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/tmpl.dir/link.d CMakeFiles/tmpl.dir/main.cpp.o -o tmpl
