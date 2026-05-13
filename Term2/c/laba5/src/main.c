@@ -1,4 +1,4 @@
-#include "massives.h"
+#include "incls.h"
 #include <stdio.h>
 
 int main(){
@@ -8,6 +8,7 @@ int main(){
    prnarr(unsorted, size);
    
    int choise = 0;
+   printf("choose sort\n1:bblesort\n2:bin_insertion_sort");
    scanf("%d", &choise);
    switch (choise) {
       case 1:
