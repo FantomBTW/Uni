@@ -17,8 +17,8 @@ typedef struct Node {
 Node* createNode(FootballClub club){
     Node* node = (Node*)malloc(sizeof(Node));
 
-    if (node == NULL) {
-        printf("Ошибка выделения памяти\n");
+    if (node == NULL){
+        printf("Memory error\n");
         exit(1);
     }
 
@@ -31,14 +31,14 @@ Node* createNode(FootballClub club){
 void pushBack(Node** head, FootballClub club){
     Node* newNode = createNode(club);
 
-    if (*head == NULL) {
+    if (*head == NULL){
         *head = newNode;
         return;
     }
 
     Node* temp = *head;
 
-    while (temp->next != NULL) {
+    while (temp->next != NULL){
         temp = temp->next;
     }
 
@@ -46,18 +46,18 @@ void pushBack(Node** head, FootballClub club){
 }
 
 void printList(Node* head){
-    if (head == NULL) {
-        printf("Список пуст\n");
+    if (head == NULL){
+        printf("Empty list\n");
         return;
     }
 
     int i = 1;
 
-    while (head != NULL) {
-        printf("\nКлуб %d\n", i++);
-        printf("Название: %s\n", head->data.name);
-        printf("Страна: %s\n", head->data.country);
-        printf("Годы побед: %d\n", head->data.winYears);
+    while (head != NULL){
+        printf("\nClub %d\n", i++);
+        printf("Name: %s\n", head->data.name);
+        printf("Country: %s\n", head->data.country);
+        printf("Winning years: %d\n", head->data.winYears);
 
         head = head->next;
     }
@@ -65,26 +65,24 @@ void printList(Node* head){
 
 
 void deleteByName(Node** head, const char* name){
-    if (*head == NULL) {
+    if (*head == NULL){
         return;
     }
 
     Node* temp = *head;
     Node* prev = NULL;
 
-    while (temp != NULL &&
-           strcmp(temp->data.name, name) != 0) {
-
+    while (temp != NULL && strcmp(temp->data.name, name) != 0){
         prev = temp;
         temp = temp->next;
     }
 
-    if (temp == NULL) {
-        printf("Клуб не найден\n");
+    if (temp == NULL){
+        printf("Club wasn't found\n");
         return;
     }
 
-    if (prev == NULL) {
+    if (prev == NULL){
         *head = temp->next;
     } else {
         prev->next = temp->next;
@@ -92,14 +90,14 @@ void deleteByName(Node** head, const char* name){
 
     free(temp);
 
-    printf("Клуб удалён\n");
+    printf("Club deleted\n");
 }
 
 
 void freeList(Node** head){
     Node* temp;
 
-    while (*head != NULL) {
+    while (*head != NULL){
         temp = *head;
         *head = (*head)->next;
         free(temp);
@@ -109,7 +107,7 @@ void freeList(Node** head){
 int getSize(Node* head){
     int size = 0;
 
-    while (head != NULL) {
+    while (head != NULL){
         size++;
         head = head->next;
     }
