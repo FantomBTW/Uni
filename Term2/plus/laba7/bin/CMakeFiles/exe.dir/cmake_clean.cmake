@@ -2,8 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/exe.dir/link.d"
   "CMakeFiles/exe.dir/main.cpp.o"
   "CMakeFiles/exe.dir/main.cpp.o.d"
-  "CMakeFiles/exe.dir/vec/vec.cpp.o"
-  "CMakeFiles/exe.dir/vec/vec.cpp.o.d"
   "exe"
   "exe.pdb"
 )

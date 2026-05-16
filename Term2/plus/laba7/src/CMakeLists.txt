@@ -4,5 +4,4 @@ project(exe)
 add_executable(
     exe 
     main.cpp
-    vec/vec.cpp
 )

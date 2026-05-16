@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/Aoi/git/Uni/Term2/plus/laba7/src/main.cpp" "CMakeFiles/exe.dir/main.cpp.o" "gcc" "CMakeFiles/exe.dir/main.cpp.o.d"
-  "/home/Aoi/git/Uni/Term2/plus/laba7/src/vec/vec.cpp" "CMakeFiles/exe.dir/vec/vec.cpp.o" "gcc" "CMakeFiles/exe.dir/vec/vec.cpp.o.d"
   "" "exe" "gcc" "CMakeFiles/exe.dir/link.d"
   )
 

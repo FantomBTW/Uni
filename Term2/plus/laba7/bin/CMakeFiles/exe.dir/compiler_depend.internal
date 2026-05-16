@@ -3,7 +3,7 @@
 
 CMakeFiles/exe.dir/main.cpp.o
  /home/Aoi/git/Uni/Term2/plus/laba7/src/main.cpp
- /home/Aoi/git/Uni/Term2/plus/laba7/src/vec/vec.hpp
+ /home/Aoi/git/Uni/Term2/plus/laba7/src/cls/wrk.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
@@ -75,8 +75,10 @@ CMakeFiles/exe.dir/main.cpp.o
  /usr/include/bits/wchar.h
  /usr/include/bits/wctype-wchar.h
  /usr/include/bits/wordsize.h
+ /usr/include/c++/16.1.1/algorithm
  /usr/include/c++/16.1.1/backward/binders.h
  /usr/include/c++/16.1.1/bit
+ /usr/include/c++/16.1.1/bits/algorithmfwd.h
  /usr/include/c++/16.1.1/bits/alloc_traits.h
  /usr/include/c++/16.1.1/bits/allocator.h
  /usr/include/c++/16.1.1/bits/basic_ios.h
@@ -121,6 +123,8 @@ CMakeFiles/exe.dir/main.cpp.o
  /usr/include/c++/16.1.1/bits/predefined_ops.h
  /usr/include/c++/16.1.1/bits/ptr_traits.h
  /usr/include/c++/16.1.1/bits/range_access.h
+ /usr/include/c++/16.1.1/bits/ranges_algo.h
+ /usr/include/c++/16.1.1/bits/ranges_algobase.h
  /usr/include/c++/16.1.1/bits/ranges_base.h
  /usr/include/c++/16.1.1/bits/ranges_cmp.h
  /usr/include/c++/16.1.1/bits/ranges_util.h
@@ -129,20 +133,28 @@ CMakeFiles/exe.dir/main.cpp.o
  /usr/include/c++/16.1.1/bits/stdexcept_except.h
  /usr/include/c++/16.1.1/bits/stdexcept_throw.h
  /usr/include/c++/16.1.1/bits/stdexcept_throwfwd.h
+ /usr/include/c++/16.1.1/bits/stl_algo.h
  /usr/include/c++/16.1.1/bits/stl_algobase.h
+ /usr/include/c++/16.1.1/bits/stl_bvector.h
  /usr/include/c++/16.1.1/bits/stl_construct.h
  /usr/include/c++/16.1.1/bits/stl_function.h
+ /usr/include/c++/16.1.1/bits/stl_heap.h
  /usr/include/c++/16.1.1/bits/stl_iterator.h
  /usr/include/c++/16.1.1/bits/stl_iterator_base_funcs.h
  /usr/include/c++/16.1.1/bits/stl_iterator_base_types.h
  /usr/include/c++/16.1.1/bits/stl_pair.h
+ /usr/include/c++/16.1.1/bits/stl_tempbuf.h
+ /usr/include/c++/16.1.1/bits/stl_uninitialized.h
+ /usr/include/c++/16.1.1/bits/stl_vector.h
  /usr/include/c++/16.1.1/bits/streambuf.tcc
  /usr/include/c++/16.1.1/bits/streambuf_iterator.h
  /usr/include/c++/16.1.1/bits/string_view.tcc
  /usr/include/c++/16.1.1/bits/stringfwd.h
+ /usr/include/c++/16.1.1/bits/uniform_int_dist.h
  /usr/include/c++/16.1.1/bits/uses_allocator.h
  /usr/include/c++/16.1.1/bits/uses_allocator_args.h
  /usr/include/c++/16.1.1/bits/utility.h
+ /usr/include/c++/16.1.1/bits/vector.tcc
  /usr/include/c++/16.1.1/bits/version.h
  /usr/include/c++/16.1.1/cctype
  /usr/include/c++/16.1.1/cerrno
@@ -171,6 +183,8 @@ CMakeFiles/exe.dir/main.cpp.o
  /usr/include/c++/16.1.1/new
  /usr/include/c++/16.1.1/numbers
  /usr/include/c++/16.1.1/ostream
+ /usr/include/c++/16.1.1/pstl/execution_defs.h
+ /usr/include/c++/16.1.1/pstl/glue_algorithm_defs.h
  /usr/include/c++/16.1.1/pstl/pstl_config.h
  /usr/include/c++/16.1.1/stdexcept
  /usr/include/c++/16.1.1/streambuf
@@ -180,6 +194,7 @@ CMakeFiles/exe.dir/main.cpp.o
  /usr/include/c++/16.1.1/tuple
  /usr/include/c++/16.1.1/type_traits
  /usr/include/c++/16.1.1/typeinfo
+ /usr/include/c++/16.1.1/vector
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h

@@ -153,30 +153,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-vec/vec.o: vec/vec.cpp.o
-.PHONY : vec/vec.o
-
-# target to build an object file
-vec/vec.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/vec/vec.cpp.o
-.PHONY : vec/vec.cpp.o
-
-vec/vec.i: vec/vec.cpp.i
-.PHONY : vec/vec.i
-
-# target to preprocess a source file
-vec/vec.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/vec/vec.cpp.i
-.PHONY : vec/vec.cpp.i
-
-vec/vec.s: vec/vec.cpp.s
-.PHONY : vec/vec.s
-
-# target to generate assembly for a file
-vec/vec.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/vec/vec.cpp.s
-.PHONY : vec/vec.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +165,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... vec/vec.o"
-	@echo "... vec/vec.i"
-	@echo "... vec/vec.s"
 .PHONY : help
 
 
