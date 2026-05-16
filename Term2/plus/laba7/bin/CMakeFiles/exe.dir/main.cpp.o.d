@@ -1,6 +1,8 @@
 CMakeFiles/exe.dir/main.cpp.o: \
  /home/Aoi/git/Uni/Term2/plus/laba7/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/16.1.1/algorithm \
+ /usr/include/stdc-predef.h \
+ /home/Aoi/git/Uni/Term2/plus/laba7/src/fn/task1.hpp \
+ /usr/include/c++/16.1.1/algorithm \
  /usr/include/c++/16.1.1/bits/stl_algobase.h \
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -172,4 +174,19 @@ CMakeFiles/exe.dir/main.cpp.o: \
  /usr/include/c++/16.1.1/bits/stl_vector.h \
  /usr/include/c++/16.1.1/bits/stl_bvector.h \
  /usr/include/c++/16.1.1/bits/vector.tcc \
- /home/Aoi/git/Uni/Term2/plus/laba7/src/cls/wrk.hpp
+ /home/Aoi/git/Uni/Term2/plus/laba7/src/fn/../cls/wrk.hpp \
+ /home/Aoi/git/Uni/Term2/plus/laba7/src/fn/task2.hpp \
+ /usr/include/c++/16.1.1/list /usr/include/c++/16.1.1/bits/stl_list.h \
+ /usr/include/c++/16.1.1/bits/allocated_ptr.h \
+ /usr/include/c++/16.1.1/ext/aligned_buffer.h \
+ /usr/include/c++/16.1.1/bits/list.tcc \
+ /home/Aoi/git/Uni/Term2/plus/laba7/src/fn/task3.hpp \
+ /usr/include/c++/16.1.1/set /usr/include/c++/16.1.1/bits/stl_tree.h \
+ /usr/include/c++/16.1.1/bits/node_handle.h \
+ /usr/include/c++/16.1.1/bits/stl_set.h \
+ /usr/include/c++/16.1.1/bits/stl_multiset.h \
+ /home/Aoi/git/Uni/Term2/plus/laba7/src/fn/task4.hpp \
+ /usr/include/c++/16.1.1/stack /usr/include/c++/16.1.1/deque \
+ /usr/include/c++/16.1.1/bits/stl_deque.h \
+ /usr/include/c++/16.1.1/bits/deque.tcc \
+ /usr/include/c++/16.1.1/bits/stl_stack.h
