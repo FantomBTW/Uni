@@ -125,14 +125,6 @@ main PROC
   invoke atodw, addr textstring
   mov intedYear, EAX       ; Сохраняем год в переменную
 
-  ;check to 4
-  mov EAX, intedYear
-  Xor EDX,  EDX
-  mov EBX,  4
-  div EBX           ; EAX / 4, остаток в EDX
-  cmp EDX,  0          ; Проверка: делится на 4?
-  jne NotLeap         ; Если нет -> не високосный
-
   ;check to 100
   mov EAX, intedYear
   Xor EDX,  EDX
@@ -140,6 +132,14 @@ main PROC
   div EBX           ; EAX / 100
   cmp EDX, 0          ; Проверка: делится на 100?
   jne IsLeap          ; Если НЕ делится на 100 -> високосный
+
+  ;check to 4
+  mov EAX, intedYear
+  Xor EDX,  EDX
+  mov EBX,  4
+  div EBX           ; EAX / 4, остаток в EDX
+  cmp EDX,  0          ; Проверка: делится на 4?
+  jne NotLeap         ; Если нет -> не високосный
 
   ; check to 400
   mov EAX, intedYear
