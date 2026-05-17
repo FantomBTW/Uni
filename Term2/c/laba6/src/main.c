@@ -1,16 +1,15 @@
 #include <stdio.h>
 #include "list.h"
 #include "file.h"
-#include "sort.h"
 
 void inputClub(FootballClub* club){
-    printf("Введите название клуба: ");
+    printf("Enter name: ");
     scanf(" %[^\n]", club->name);
 
-    printf("Введите страну: ");
+    printf("Enter country: ");
     scanf(" %[^\n]", club->country);
 
-    printf("Введите годы побед: ");
+    printf("Enter win years: ");
     scanf("%d", &club->winYears);
 }
 
@@ -51,14 +50,12 @@ int main(){
             case 4:
                 printf("filename: ");
                 scanf("%s", filename);
+                saveToFile(head, filename);
                 break;
             case 5:
                 printf("filename: ");
                 scanf("%s", filename);
                 loadFromFile(&head, filename);
-                break;
-            case 6:
-                sortByWinYears(head);
                 break;
             case 0:
                 break;
