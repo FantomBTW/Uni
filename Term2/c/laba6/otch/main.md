@@ -18,7 +18,7 @@
 
 ### О Т Ч Е Т
 
-### по лабораторной работе № 5
+### по лабораторной работе № 6
 
 </div>
 
@@ -56,177 +56,251 @@
 
 
 ## Задача
-1.	Создать функцию сортировки «пузырьком» итерационную и рекурсивную, модифицировать метод, передвинув нижнюю границу на место последнего swap. Усовершенствуйте алгоритм, применив способ “перемешивание” где перетаскивается не только тяжелый элемент вниз, но и легкий вверх.␍
-2.	Создать функцию сортировки «вставками», для поиска места вставки в отсортированную часть массива применять функцию двоичного поиска.␍
-3.	Создать функцию быстрой «qsort» сортировки, отличной от приведённого на лекции.␍
-    Во всех функциях:␍
-    a)	применять указатели (не индексы);␍
-    b)	для сравнения элементов, применять функцию (свою, не такую как в лекции) передаваемую как указатель, в качестве параметра функции сортировки;␍
-    c)	посчитать количество сравнений элементов, перестановок и (желательно) глубину рекурсии.␍
+Создать односвязный список. Данными списка должны быть структуры соответствующего варианта. Создать функции для записи списка в файл и чтения списка из файла.
+Реализовать минимум все функции, приведённые в лекции, предложить  свои варианты функций работы со списком.
+Создать массив указателей на элементы списка, отсортировать его по выбранному полю элемента списка.
+Создать меню для управления работы со списком.
+В меню должны быть также пункты для сохранения списка на диске (имя файла запрашивается), чтения и просмотра файла, сортировки списка (с помощью массива указателей).
 
 Листинг
 
 main.c
 ```c
-#include "incls.h"
 #include <stdio.h>
+#include "list.h"
+#include "file.h"
+
+void inputClub(FootballClub* club){
+    printf("Enter name: ");
+    scanf(" %[^\n]", club->name);
+
+    printf("Enter country: ");
+    scanf(" %[^\n]", club->country);
+
+    printf("Enter win years: ");
+    scanf("%d", &club->winYears);
+}
 
 int main(){
-   int unsorted[] = {1,5,4,77,23,5,5};
-   int size = sizeof(unsorted)/sizeof(unsorted[0]);
+    Node* head = NULL;
 
-   prnarr(unsorted, size);
-   
-   int choise = 0;
-   printf("choose sort\n1:bblesort\n2:bin_insertion_sort");
-   scanf("%d", &choise);
-   switch (choise) {
-      case 1:
-         bblesort(unsorted, size);
-         break;
-      case 2:
-         bin_insertion_sort(unsorted, size);
-         break;
-   }
+    int choice;
+    char filename[100];
+    char name[100];
 
-   printf("\n");
-   prnarr(unsorted, size);
-}
-```
+    FootballClub club;
 
-incls.h
-```c
-#include "bble.h"
-#include "insSort.h"
-#include "prn.h"
-#include "qsort.h"
-```
+    do {
+        printf("choose option");
+        printf("1. Add club\n");
+        printf("2. Show List\n");
+        printf("3. Delete Club\n");
+        printf("4. saveToFile\n");
+        printf("5. loadFromFile\n");
+        printf("6. sort by winYears\n");
+        printf("0. Exit\n");
 
-bble.h
-```c
-void swap(int *a, int *b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
+        scanf("%d", &choice);
 
-
-void bblesort(int arr[], int n){
-   int right = n-1;
-   int last_swap = 1;
-
-   while (right > 0) {
-      last_swap = 0;
-      for (int i = 0; i < right; i++){
-         if (arr[i] > arr[i+1]){
-            swap(&arr[i], &arr[i+1]);
-            last_swap = i;
-         }
-      }
-      right = last_swap;
-   }
-}
-```
-
-insSort.h
-```c
-int bin_search_pos(int arr[], int right, int key) {
-   int left = 0;
-   while (left <= right) {
-      int mid = (left + right) / 2;
-      if (arr[mid] <= key)
-         left = mid + 1;
-      else
-         right = mid - 1;
-   }
-   return left;
-}
-
-void bin_insertion_sort(int arr[], int n) {
-   int key = 0;
-   int pos = 0;
-   for (int i = 1; i < n; i++) {
-      key = arr[i];
-      pos = bin_search_pos(arr, i - 1, key);
-
-      for (int j = i; j > pos; j--) {
-         arr[j] = arr[j - 1];
-      }
-      arr[pos] = key;
-   }
-}
-```
-
-qsort.h
-```c
-#include <stdio.h>
-#include "struct.h"
-
-void swap(int *a, int *b, qsort_stats_t *stats){
-    int tmp = *a;
-    *a = *b;
-    *b = tmp;
-    stats->swaps++;
-}
-
-int compare_ints(const int *a, const int *b){
-    const int *x = a;
-    const int *y = b;
-
-    return (*x > *y) - (*x < *y);
-}
-
-int *partition(
-    int *l, int *r,
-    int (*cmp)(const int *, const int *),
-    qsort_stats_t *stats
-){
-    int *opor = r;
-    int *i = l;
-
-    for (int *j = l; j < r; j++) {
-        stats->comparisons++;
-
-        if (cmp(j, opor) < 0) {
-            swap(i, j, stats);
-            i++;
+        switch (choice){
+            case 1:
+                inputClub(&club);
+                pushBack(&head, club);
+                break;
+            case 2:
+                printList(head);
+                break;
+            case 3:
+                printf("Enter club name: ");
+                fgets(name, 100, stdin);
+                deleteByName(&head, name);
+                break;
+            case 4:
+                printf("filename: ");
+                scanf("%s", filename);
+                saveToFile(head, filename);
+                break;
+            case 5:
+                printf("filename: ");
+                scanf("%s", filename);
+                loadFromFile(&head, filename);
+                break;
+            case 0:
+                break;
+            default:
+                printf("Error\n");
         }
+    } while (choice != 0);
+
+    freeList(&head);
+
+    return 0;
+}
+```
+
+list.h
+```c
+#pragma once
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct FootballClub {
+    char name[100];
+    char country[100];
+    int winYears;
+} FootballClub;
+
+typedef struct Node {
+    FootballClub data;
+    struct Node* next;
+} Node;
+
+Node* createNode(FootballClub club){
+    Node* node = (Node*)malloc(sizeof(Node));
+
+    if (node == NULL){
+        printf("Memory error\n");
+        exit(1);
     }
 
-    swap(i, opor, stats);
+    node->data = club;
+    node->next = NULL;
 
-    return i;
+    return node;
 }
 
-void quick_sort_recursive(
-    int *left,
-    int *right,
-    int (*cmp)(const int *, const int *),
-    qsort_stats_t *stats,
-    unsigned long depth
-){
-    if (left >= right)return;
+void pushBack(Node** head, FootballClub club){
+    Node* newNode = createNode(club);
 
-    if (depth > stats->recursion_depth) {
-        stats->recursion_depth = depth;
+    if (*head == NULL){
+        *head = newNode;
+        return;
     }
 
-    int *pivot = partition(left, right, cmp, stats);
+    Node* temp = *head;
 
-    quick_sort_recursive(left, pivot - 1, cmp, stats, depth + 1);
+    while (temp->next != NULL){
+        temp = temp->next;
+    }
 
-    quick_sort_recursive(pivot + 1, right, cmp, stats, depth + 1);
+    temp->next = newNode;
 }
 
-void quick_sort(
-        int *begin, int *end, 
-        int (*cmp)(const int *, const int *), 
-        qsort_stats_t *stats
-){
-    stats->comparisons = 0;
-    stats->swaps = 0;
-    stats->recursion_depth = 0;
+void printList(Node* head){
+    if (head == NULL){
+        printf("Empty list\n");
+        return;
+    }
 
-    quick_sort_recursive(begin, end - 1, cmp, stats, 1);
+    int i = 1;
+
+    while (head != NULL){
+        printf("\nClub %d\n", i++);
+        printf("Name: %s\n", head->data.name);
+        printf("Country: %s\n", head->data.country);
+        printf("Winning years: %d\n", head->data.winYears);
+
+        head = head->next;
+    }
+}
+
+
+void deleteByName(Node** head, const char* name){
+    if (*head == NULL){
+        return;
+    }
+
+    Node* temp = *head;
+    Node* prev = NULL;
+
+    while (temp != NULL && strcmp(temp->data.name, name) != 0){
+        prev = temp;
+        temp = temp->next;
+    }
+
+    if (temp == NULL){
+        printf("Club wasn't found\n");
+        return;
+    }
+
+    if (prev == NULL){
+        *head = temp->next;
+    } else {
+        prev->next = temp->next;
+    }
+
+    free(temp);
+
+    printf("Club deleted\n");
+}
+
+
+void freeList(Node** head){
+    Node* temp;
+
+    while (*head != NULL){
+        temp = *head;
+        *head = (*head)->next;
+        free(temp);
+    }
+}
+
+int getSize(Node* head){
+    int size = 0;
+
+    while (head != NULL){
+        size++;
+        head = head->next;
+    }
+
+    return size;
+}
+```
+
+file.h
+```c
+#pragma once
+#include <stdio.h>
+#include <stdlib.h>
+#include "list.h"
+
+void saveToFile(Node* head, const char* filename){
+    FILE* file = fopen(filename, "wb");
+
+    if (file == NULL){
+        printf("File wasn't open\n");
+        return;
+    }
+
+    while (head != NULL){
+        fwrite(&head->data, sizeof(FootballClub), 1, file);
+        head = head->next;
+    }
+
+    fclose(file);
+
+    printf("List saved\n");
+}
+
+void loadFromFile(Node** head, const char* filename){
+    FILE* file = fopen(filename, "rb");
+
+    if (file == NULL){
+        printf("Error opening\n");
+        return;
+    }
+
+    freeList(head);
+
+    FootballClub club;
+
+    while (fread(&club, sizeof(FootballClub), 1, file) == 1){
+        pushBack(head, club);
+    }
+
+    fclose(file);
+
+    printf("List loaded\n");
 }
 ```
