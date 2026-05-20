@@ -1,17 +1,20 @@
-def increment(massive):
-    massive = [str(x) for x in massive]
-    num = int(''.join(massive))
-
-    num += 1
-
-    return [x for x in str(num)]
-
+def twoSum(nums, target):
+    prev_map = {}
+    
+    for i, n in enumerate(nums):
+        diff = target - n
+        
+        if diff in prev_map:
+            return [prev_map[diff], i]
+        
+        prev_map[n] = i
+    
+    return []
 
 def main():
-    print(increment([1]))
-    print(increment([1, 9]))
-    return 0
-
+    nums = [2, 7, 11, 15]
+    target = 9
+    print(f"indexes: {twoSum(nums, target)}")
 
 if __name__ == "__main__":
     main()
