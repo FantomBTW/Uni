@@ -1,10 +1,23 @@
-#include <ftxui/component/component.hpp>
-#include <ftxui/component/component_options.hpp>
-#include <ftxui/component/screen_interactive.hpp>
-#include <ftxui/ftxui.hpp>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
 
-#include "menu.hpp"
+#include "tui/menu.hpp"
+#include "csv/csv.hpp"
 
 int main() {
+    std::ifstream file = csv_choise();
+    std::vector<std::string> headers = read_header(file);
     
+    int colIndex = colChoise(headers);
+    int sortMethod = sortChoise();
+    
+    std::vector<std::vector<std::string>> rows = read_all_rows(file);
+    
+    std::cout << "Headers: " << headers.size() << " columns\n";
+    std::cout << "Rows: " << rows.size() << "\n";
+    std::cout << "Sorted by column " << colIndex << " (" << headers[colIndex] << "), method " << sortMethod << "\n";
+    
+    return 0;
 }

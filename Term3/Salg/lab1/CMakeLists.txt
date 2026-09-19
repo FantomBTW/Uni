@@ -18,7 +18,9 @@ FetchContent_MakeAvailable(ftxui)
 add_executable(
     exe
     main.cpp
-    menu.cpp
+    csv/csv.cpp
+    tui/menu.cpp
+    sort/sort.cpp
 )
 
 target_link_libraries(exe PRIVATE ftxui::screen ftxui::dom ftxui::component)

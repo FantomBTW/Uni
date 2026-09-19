@@ -2,8 +2,22 @@
 #include <ftxui/component/component_options.hpp>
 #include <ftxui/component/screen_interactive.hpp>
 #include <ftxui/ftxui.hpp>
+#include <vector>
 
-int menu(){
+int colChoise(std::vector<std::string> colVars){
+    using namespace ftxui;
+
+    auto screen = ScreenInteractive::Fullscreen();
+
+    int colIndex = 0;
+    
+    MenuOption option;
+    option.on_enter = screen.ExitLoopClosure();
+    auto menu = Menu(&colVars, &colIndex, option);
+    
+    screen.Loop(menu);
+
+    return colIndex;
 }
 
 int sortChoise(){
@@ -18,7 +32,6 @@ int sortChoise(){
         "пирамидальная",
         "Быстрая",
         "Лексиграфическая",
-        "Exit",
     };
     int selected = 0;
 
