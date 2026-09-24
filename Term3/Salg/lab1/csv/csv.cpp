@@ -5,7 +5,10 @@
 #include <stdexcept>
 #include <string>
 #include <vector>
+#include <limits>
+#include "csv.hpp"
 
+//TODO:реализовать выбор файла
 std::ifstream csv_choise(){
     std::ifstream file("/home/fantom/git/Uni/Term3/Salg/lab1/csv/spotify.csv");
     if (!file.is_open()) throw std::runtime_error(
@@ -15,6 +18,7 @@ std::ifstream csv_choise(){
     return file;
 }
 
+//читаем хедер для списка столбцов
 std::vector<std::string> read_header(std::ifstream& ourcsv){
     std::string header;
     std::getline(ourcsv, header);
@@ -30,20 +34,29 @@ std::vector<std::string> read_header(std::ifstream& ourcsv){
     return header_cols;
 }
 
-std::vector<std::vector<std::string>> read_all_rows(std::ifstream& ourcsv){
-    std::vector<std::vector<std::string>> rows;
+//парсим всё в Row формат для дальнейших сортировок
+//иначе я не придумал, как оно должно быть реализовано
+std::vector<Row> read_all_rows(std::ifstream& ourcsv){
+    std::vector<Row> rows;
     std::string line;
     
+    //берём по одной линии файла
     while (std::getline(ourcsv, line)) {
-        std::vector<std::string> row;
+        Row row;
         std::istringstream ss(line);
         std::string cell;
         
+        //парсим её в набор строк для вывода и набор decimal для сортировок
         while (std::getline(ss, cell, ',')) {
-            row.push_back(cell);
+            row.cells.push_back(cell);
+            try {
+                row.numeric.push_back(std::stod(cell));
+            } catch (...) {
+                row.numeric.push_back(std::numeric_limits<double>::quiet_NaN());
+            }
         }
         
-        if (!row.empty()) {
+        if (!row.cells.empty()) {
             rows.push_back(row);
         }
     }

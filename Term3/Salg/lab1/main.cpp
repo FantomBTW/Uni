@@ -5,6 +5,7 @@
 
 #include "tui/menu.hpp"
 #include "csv/csv.hpp"
+#include "sort/basesorts.hpp"
 
 int main() {
     std::ifstream file = csv_choise();
@@ -13,11 +14,15 @@ int main() {
     int colIndex = colChoise(headers);
     int sortMethod = sortChoise();
     
-    std::vector<std::vector<std::string>> rows = read_all_rows(file);
+    std::vector<Row> rows = read_all_rows(file);
     
-    std::cout << "Headers: " << headers.size() << " columns\n";
-    std::cout << "Rows: " << rows.size() << "\n";
-    std::cout << "Sorted by column " << colIndex << " (" << headers[colIndex] << "), method " << sortMethod << "\n";
+    insertionSort(rows, colIndex);
+
+    for (int i = 0; i < 10 && i < (int)rows.size(); i++) {
+        std::cout << rows[i].cells[1] << " | " << rows[i].cells[colIndex] << std::endl;
+    }
+
+    // TODO: передать отсортированные rows в TUI
     
     return 0;
 }

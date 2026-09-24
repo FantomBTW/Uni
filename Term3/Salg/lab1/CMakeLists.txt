@@ -20,7 +20,8 @@ add_executable(
     main.cpp
     csv/csv.cpp
     tui/menu.cpp
-    sort/sort.cpp
+    sort/basesorts.cpp
+    sort/mergesort.cpp
 )
 
 target_link_libraries(exe PRIVATE ftxui::screen ftxui::dom ftxui::component)
