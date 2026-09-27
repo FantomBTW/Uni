@@ -1,19 +1,22 @@
 #include "quick.hpp"
+#include <cmath>
 #include "../csv/csv.hpp"
 #include "swap.hpp"
 
 void quickSort(std::vector<Row>& vec, int sortIndex) {
-    quickSorter(vec, sortIndex, 0, vec.size() - 1);
+    //проверка на столбец, чтоб не сравнивать строки
+    bool isNum = !std::isnan(vec[0].numeric[sortIndex]);
+    quickSorter(vec, sortIndex, 0, static_cast<int>(vec.size()) - 1, isNum);
 }
 
-//  идём слева направо, всё <= pilot перемещаем на место последнего элемента, 
+//  идём слева направо, всё <= pilot перемещаем на место последнего элемента,
 //  что меньше
-int part(std::vector<Row>& vec, int sortIndex, int left, int right) {
-    double pilot = vec[right].numeric[sortIndex];
+int part(std::vector<Row>& vec, int sortIndex, int left, int right, bool isNum) {
+    Row pilot = vec[right];
     int i = left - 1; // левая грань
 
     for (int j = left; j < right; j++) {
-        if (vec[j].numeric[sortIndex] <= pilot) {
+        if (cmp(vec[j], pilot, sortIndex, isNum) <= 0) {
             i++;
             swap(vec[i], vec[j]);
         }
@@ -24,11 +27,11 @@ int part(std::vector<Row>& vec, int sortIndex, int left, int right) {
     return i + 1; // возвращаем его индекс
 }
 
-void quickSorter(std::vector<Row>& vec, int sortIndex, int left, int right) {
+void quickSorter(std::vector<Row>& vec, int sortIndex, int left, int right, bool isNum) {
     if (left >= right) return;
     //здесь мы сортируем по пилоту
-    int pilot = part(vec, sortIndex, left, right);
+    int pilot = part(vec, sortIndex, left, right, isNum);
     // после чего мы сортируем вокруг текущего пилота
-    quickSorter(vec, sortIndex, left, pilot - 1);
-    quickSorter(vec, sortIndex, pilot + 1, right);
+    quickSorter(vec, sortIndex, left, pilot - 1, isNum);
+    quickSorter(vec, sortIndex, pilot + 1, right, isNum);
 }
