@@ -25,6 +25,7 @@ add_executable(
     sort/heapsort.cpp
     sort/swap.cpp
     sort/quick.cpp
+    sort/lexisort.cpp
 )
 
 target_link_libraries(exe PRIVATE ftxui::screen ftxui::dom ftxui::component)

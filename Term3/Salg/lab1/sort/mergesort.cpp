@@ -1,20 +1,23 @@
 #include "mergesort.hpp"
+#include <cmath>
 #include <vector>
+#include "swap.hpp"
 
 void mergerNSorter(
         std::vector<Row> &vec,
         int left,//т.к. мы работает с одним массивом, а не разными, берём подмассивы по индексам
         int right,//ну а это конец подмассива
-        int sortIndex
+        int sortIndex,
+        bool isNum
     ){
     if (left >= right) return;//массивы длинной в 1 отсортированы
 
     int mid = left + (right - left)/2; //средний элемент чтоб взять середину как края
-    
-    mergerNSorter(vec, left, mid, sortIndex);
-    mergerNSorter(vec, mid+1, right, sortIndex);
-    
-    merge(vec, sortIndex, left, mid, right); // склеиваем подмассивы, помним, что это как бы просто части массивов, но как бы массивы
+
+    mergerNSorter(vec, left, mid, sortIndex, isNum);
+    mergerNSorter(vec, mid+1, right, sortIndex, isNum);
+
+    merge(vec, sortIndex, left, mid, right, isNum); // склеиваем подмассивы, помним, что это как бы просто части массивов, но как бы массивы
 }
 
 
@@ -23,17 +26,17 @@ void merge(
         int sortIndex,
         int left,
         int mid,
-        int right
+        int right,
+        bool isNum
     ){
     //размеры половин
     int n1 = mid - left + 1;
     int n2 = right - mid;
 
-    //из этих подмассивов будет получаться массив
+    //"бэкапим"
     std::vector<Row> L(n1);
     std::vector<Row> R(n2);
 
-    //"бэкапим"
     for (int i = 0; i < n1; i++)
         L[i] = vec[left + i];
     for (int j = 0; j < n2; j++)
@@ -44,7 +47,7 @@ void merge(
     int global = left;
     while (leftPerebor < n1 && rightPerebor < n2) {
         //если левый элемент меньше, кидаем его в глобалку
-        if (L[leftPerebor].numeric[sortIndex] <= R[rightPerebor].numeric[sortIndex])
+        if (cmp(L[leftPerebor], R[rightPerebor], sortIndex, isNum) <= 0)
             vec[global++] = L[leftPerebor++];
         //иначе кидаем из правого массива
         else
@@ -62,5 +65,7 @@ void merge(
 void mergeSort(std::vector<Row> &vec, int sortIndex){
     //абстракция над mergerNSorter
     //все сортировки запускаются через vec и sortIndex, а mergerNSorter рекурсивный, он так не может
-    mergerNSorter(vec, 0, static_cast<int>(vec.size()) - 1, sortIndex);
+    //проверка на столбец, чтоб не сравнивать строки
+    bool isNum = !std::isnan(vec[0].numeric[sortIndex]);
+    mergerNSorter(vec, 0, static_cast<int>(vec.size()) - 1, sortIndex, isNum);
 }

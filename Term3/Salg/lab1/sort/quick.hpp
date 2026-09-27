@@ -12,12 +12,14 @@ int part(
         std::vector<Row>& vec,
         int sortIndex,
         int left,
-        int right
+        int right,
+        bool isNum
     );
 
 void quickSorter(
         std::vector<Row>& vec,
         int sortIndex,
         int left,
-        int right
+        int right,
+        bool isNum
     );

@@ -13,12 +13,14 @@ void merge(
         int sortIndex,
         int left,
         int mid,
-        int right
+        int right,
+        bool isNum
 );
 
 void mergerNSorter(
         std::vector<Row> &vec,
         int left, int right,
-        
-        int sortIndex
+
+        int sortIndex,
+        bool isNum
 );
