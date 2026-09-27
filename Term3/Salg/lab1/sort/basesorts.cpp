@@ -2,12 +2,7 @@
 #include <vector>
 #include <cmath>
 #include <iostream>
-
-void swap(Row& a, Row& b) {
-    Row temp = a;
-    a = b;
-    b = temp;
-}
+#include "swap.hpp"
 
 //insertionSort:
 //  двигаем влево до упора
