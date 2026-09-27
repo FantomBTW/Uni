@@ -6,7 +6,6 @@
 #include "quick.hpp"
 #include "mergesort.hpp"
 #include "heapsort.hpp"
-#include "lexisort.hpp"
 
 //insertionSort:
 //  двигаем влево до упора
@@ -87,7 +86,6 @@ void dispatchSort(std::vector<Row>& vec, int sortIndex, int sortMethod) {
         case 3: mergeSort(vec, sortIndex); break;
         case 4: heapSort(vec, sortIndex); break;
         case 5: quickSort(vec, sortIndex); break;
-        case 6: lexiSort(vec, sortIndex); break;
         default: break;
     }
 }
