@@ -3,6 +3,9 @@
 #include <cmath>
 #include <iostream>
 #include "swap.hpp"
+#include "quick.hpp"
+#include "mergesort.hpp"
+#include "heapsort.hpp"
 
 //insertionSort:
 //  двигаем влево до упора
@@ -81,5 +84,17 @@ void bubbleSort(std::vector<Row>& vec, int sortIndex) {
         if (!swapped) {
             break;
         }
+    }
+}
+
+void dispatchSort(std::vector<Row>& vec, int sortIndex, int sortMethod) {
+    switch (sortMethod) {
+        case 0: selectionSort(vec, sortIndex); break;
+        case 1: bubbleSort(vec, sortIndex); break;
+        case 2: insertionSort(vec, sortIndex); break;
+        case 3: mergeSort(vec, sortIndex); break;
+        case 4: heapSort(vec, sortIndex); break;
+        case 5: quickSort(vec, sortIndex); break;
+        default: break;
     }
 }

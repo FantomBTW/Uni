@@ -16,13 +16,11 @@ int main() {
     
     std::vector<Row> rows = read_all_rows(file);
     
-    insertionSort(rows, colIndex);
+    dispatchSort(rows, colIndex, sortMethod);
 
-    for (int i = 0; i < 10 && i < (int)rows.size(); i++) {
+    for (int i = 0; i < rows.size(); i++) {
         std::cout << rows[i].cells[1] << " | " << rows[i].cells[colIndex] << std::endl;
     }
 
-    // TODO: передать отсортированные rows в TUI
-    
     return 0;
 }
