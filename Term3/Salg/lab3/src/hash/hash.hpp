@@ -1,29 +1,31 @@
 #include <stdexcept>
 
-template <typename T>
 struct Node {
-    T data;
+    char* key;
+    int data;
     Node* next;
 };
 
 
-template <typename T>
 class table {
 private:
     int size;
-    Node<T> datarr[];
+    Node* datarr;
+    int usedcells = 0;
+
+    int hasher();
 public:
     table(int size) : size(size) {
         if (size<=1) {
             throw std::runtime_error("creating useless or impossible dataset");
         }
-        datarr = new Node<T>[size];
+        datarr = new Node[size];
     }
 
     table(const table&) = delete;
     table& operator=(const table&) = delete;
 
     ~table(){
-        delete[] datarr();
+        delete[] datarr;
     }
 };

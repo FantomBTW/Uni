@@ -10,5 +10,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_executable(
     exe
     main.cpp
+    hash/hasher.cpp
 )
 
