@@ -12,20 +12,18 @@ struct Node {
 
 class table {
 private:
-    unsigned short int size;
+    std::uint32_t size;
+    std::uint32_t count = 0;
     Node* datarr;
-    //int usedcells = 0;
 
     std::uint32_t hasher(const char* key) const;
 
-    unsigned short int findIndex(const char* key) const{
-        uint32_t hash = hasher(key);
-        unsigned short int index = hash%size;
-        return index;
+    std::uint32_t findIndex(const char* key) const{
+        return (hasher(key))%size;
     }
 
 public:
-    table(unsigned short int size) : size(size) {
+    table(std::uint32_t size) : size(size) {
         if (size<=1) {
             throw std::runtime_error("creating useless or impossible dataset");
         }
@@ -35,14 +33,30 @@ public:
     table(const table&) = delete;
     table& operator=(const table&) = delete;
 
-    ~table(){
+
+    ~table() {
+        for (std::uint32_t i = 0; i < size; ++i) {
+            Node* cur = datarr[i].next;
+            while (cur) {
+                Node* next = cur->next;
+                delete[] cur->key;
+                delete cur;
+                cur = next;
+            }
+        }
         delete[] datarr;
     }
+
+
+    float calcfactor() {
+        return static_cast<float>(count) / static_cast<float>(size);
+    }
+
 
     void write(const char* key, const int data){
         if (key == nullptr) return;
 
-        unsigned short int index = findIndex(key);
+        std::uint32_t index = findIndex(key);
         Node* currentNode = &datarr[index];
 
         while (currentNode->next != nullptr) {
@@ -58,10 +72,16 @@ public:
         char* keyOfNewNode = new char[strlen(key) + 1];
         strcpy(keyOfNewNode, key);
         currentNode->next = new Node{keyOfNewNode, data, nullptr};
+
+        ++count;
+
+        if (calcfactor() >= 0.75) recreate();
     }
 
     std::optional<int> find(const char* key) const{
-        unsigned short int index = findIndex(key);
+        if(key == nullptr) return std::nullopt;
+
+        std::uint32_t index = findIndex(key);
         Node* currentNode = &datarr[index];
         
         while (currentNode != nullptr) { //til end of Nodes
@@ -77,9 +97,9 @@ public:
     void remove(const char* key){
         if (key == nullptr) return;
 
-        unsigned short int index = findIndex(key);
+        std::uint32_t index = findIndex(key);
 
-        Node* previous = &datarr[index];       //sentinel: never deleted, keeps the bucket valid
+        Node* previous = &datarr[index];
         Node* currentNode = previous->next;
 
         while (currentNode != nullptr) {
@@ -87,6 +107,9 @@ public:
                 previous->next = currentNode->next;
                 delete[] currentNode->key;
                 delete currentNode;
+
+                --count;
+
                 return;
             }
 
@@ -95,5 +118,44 @@ public:
         }
 
         return;
+    }
+
+
+    void recreate(){
+        std::uint64_t newSize = static_cast<unsigned int>(size) * 2;
+        //64 for checker to work
+
+        if (newSize > UINT32_MAX) throw std::runtime_error("too much data, pls, upgrade ur pc, program and smth else");
+
+        Node* newArr = new Node[newSize]();
+
+        //relink existing nodes, keys and data are reused as-is
+        for (std::uint32_t i = 0; i < size; ++i) {
+            Node* current = datarr[i].next;
+
+            while (current != nullptr) {
+                Node* next = current->next;
+                std::uint32_t newIndex = hasher(current->key) % newSize;
+                current->next = newArr[newIndex].next;
+                newArr[newIndex].next = current;
+                current = next;
+            }
+
+        }
+
+        delete[] datarr;
+        datarr = newArr;
+        size = static_cast<std::uint32_t>(newSize);
+    }
+
+    float collisionPercentage() const{
+        if (count ==0) return 0;
+
+        std::uint32_t fullHeads = 0; //cnt of heads that have smth in it
+        for (std::uint32_t i = 0; i < size; ++i) 
+            if (datarr[i].next!=nullptr) 
+                ++fullHeads;
+
+        return static_cast<float>(count - fullHeads) / static_cast<float>(count);
     }
 };
