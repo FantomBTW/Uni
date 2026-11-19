@@ -58,26 +58,30 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(390,470)" name="Pin">
+    <comp lib="0" loc="(440,470)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="label" val="T"/>
     </comp>
-    <comp lib="0" loc="(440,510)" name="Clock">
-      <a name="appearance" val="NewPins"/>
+    <comp lib="0" loc="(440,510)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="clock"/>
     </comp>
     <comp lib="0" loc="(540,470)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
+      <a name="label" val="Q"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(540,510)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
+      <a name="label" val="nQ"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="5" loc="(490,460)" name="J-K Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <wire from="(390,470)" to="(460,470)"/>
+    <wire from="(440,470)" to="(460,470)"/>
     <wire from="(440,510)" to="(480,510)"/>
     <wire from="(460,470)" to="(460,490)"/>
     <wire from="(460,470)" to="(480,470)"/>

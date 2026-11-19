@@ -58,30 +58,36 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(410,540)" name="Pin">
+    <comp lib="0" loc="(420,530)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="label" val="T"/>
     </comp>
-    <comp lib="0" loc="(460,580)" name="Clock">
-      <a name="appearance" val="NewPins"/>
+    <comp lib="0" loc="(460,580)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="clock"/>
     </comp>
     <comp lib="0" loc="(620,520)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
+      <a name="label" val="Q"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(620,560)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
+      <a name="label" val="nQ"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="1" loc="(510,520)" name="XOR Gate"/>
+    <comp lib="1" loc="(510,520)" name="XOR Gate">
+      <a name="size" val="30"/>
+    </comp>
     <comp lib="5" loc="(520,510)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <wire from="(410,540)" to="(450,540)"/>
-    <wire from="(430,470)" to="(430,500)"/>
-    <wire from="(430,470)" to="(590,470)"/>
-    <wire from="(430,500)" to="(450,500)"/>
+    <wire from="(420,530)" to="(470,530)"/>
+    <wire from="(460,470)" to="(460,510)"/>
+    <wire from="(460,470)" to="(590,470)"/>
+    <wire from="(460,510)" to="(470,510)"/>
     <wire from="(460,580)" to="(470,580)"/>
     <wire from="(470,560)" to="(470,580)"/>
     <wire from="(470,560)" to="(510,560)"/>

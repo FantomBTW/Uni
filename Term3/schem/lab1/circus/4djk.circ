@@ -60,18 +60,22 @@
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(370,390)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="label" val="D"/>
     </comp>
-    <comp lib="0" loc="(480,470)" name="Clock">
-      <a name="appearance" val="NewPins"/>
+    <comp lib="0" loc="(480,470)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="clock"/>
     </comp>
     <comp lib="0" loc="(580,410)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
+      <a name="label" val="q"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(580,450)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
+      <a name="label" val="nq"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="1" loc="(430,410)" name="NOT Gate"/>
